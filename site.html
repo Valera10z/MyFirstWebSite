@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My web page</title>
+        <style>
+            .div {
+                border: solid 3px lightgrey;
+                width: 350px;
+                margin: 6px;
+                font-weight: bold;
+                padding: 4px;
+            }
+            .buttons {
+                text-align: center;
+                height: 60px;
+            }
+            .button {
+                position: relative;
+                top: 10px;
+                height: 40px;
+                background-color: #F0FFFF;
+                width: 125px;
+                right: 7px;
+                font-weight: bold;
+            }
+            .button2 {
+                position: relative;
+                top: 10px;
+                height: 40px;
+                background-color: #ADFF2F;
+                width: 125px;
+                left: 7px;
+                font-weight: bold;
+            }
+            .container {
+                border: solid 6px lightgray;
+                width: 375px;    
+            }
+            input {
+               margin: 5px;
+            }
+            select {
+                margin: 5px;
+            }
+            .king {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                bottom: 20px;
+            }
+            h1 {
+                display: flex;
+                justify-content: center;
+            }
+            label {
+                position: relative;
+                bottom: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Personal data</h1>
+        <form action="test.php" method="get">
+            <div class="king">
+            <div class="container">
+            <div class="div">
+                <label for="name">Name</label><br />
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+            </div>
+            <div class="div">
+                What do you prefer? <br />
+                <input type="radio" name="likeCats" value="cats" id="likeCats"><label>Cats</label>
+                <input type="radio" name="like" value="dogs" id="likeDogs"><label>Dogs</label>
+            </div>
+            <div class="div">
+                <label for="education">Learning now</label><br />
+                <select name="education" id="education">
+                    <option value="none">Not know</option>
+                    <option value="school">School</option>
+                    <option value="univer">Univer</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="div">
+                <label for="agree">Agree for data</label>
+                <input type="checkbox" name="agree" id="agree" value="1">
+            </div>
+            <div class="div buttons">
+                <button class="button" type="reset">Clear form</button>
+                <button class="button2" type="submit">Submit data</button>
+            </div>
+            </div>
+            </div>
+        </form>
+        <script src="site.js"></script>
+    </body>
+</html>
